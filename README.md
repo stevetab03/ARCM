@@ -1,8 +1,8 @@
-# ARC: Adaptive Rate Curve
+# ARCM: Adaptive Rate Curve Model
 
 [![Python 3.12+](https://img.shields.io/badge/python-3.12+-blue.svg)](https://www.python.org/downloads/)
-[![Methods: NS · HMM · LSTM](https://img.shields.io/badge/Methods-NS_%7C_HMM_%7C_LSTM-blueviolet)](https://github.com/stevetab03/ARC)
-[![Domain: US Fixed Income](https://img.shields.io/badge/Domain-US_Fixed_Income-success)](https://github.com/stevetab03/ARC)
+[![Methods: NS · HMM · LSTM](https://img.shields.io/badge/Methods-NS_%7C_HMM_%7C_LSTM-blueviolet)](https://github.com/stevetab03/ARCM)
+[![Domain: US Fixed Income](https://img.shields.io/badge/Domain-US_Fixed_Income-success)](https://github.com/stevetab03/ARCM)
 [![Dashboard: Power BI](https://img.shields.io/badge/Dashboard-Power_BI-F2C811?logo=powerbi&logoColor=black)](https://github.com/stevetab03/powerbi-dax-patterns)
 
 **Author:** Liyuan Zhang  
@@ -23,7 +23,7 @@ not straightforward was the analytical question it raised:
 > regime-aware framework say about where the 1-year rate is going, and was this
 > a good entry point?*
 
-ARC is the answer to that question. It is not an academic exercise. It is an
+ARCM is the answer to that question. It is not an academic exercise. It is an
 analytical framework built around a real position, designed to be updated as
 the position approaches maturity.
 
@@ -51,9 +51,9 @@ miscalibrated — high confidence in the wrong distribution.
 
 ---
 
-## The ARC Framework
+## The ARCM Framework
 
-ARC addresses this in three sequential layers.
+ARCM addresses this in three sequential layers.
 
 ### Layer 1 — Yield Curve Decomposition
 
@@ -76,7 +76,7 @@ are the core empirical question.
 
 The slope factor time series is not stationary in the classical sense.
 Its distributional properties — mean, variance, autocorrelation structure —
-shift discretely as monetary policy regime changes. ARC identifies these
+shift discretely as monetary policy regime changes. ARCM identifies these
 latent regime transitions using an unsupervised probabilistic approach that
 requires no manual labeling of Fed cycle dates.
 
@@ -86,7 +86,7 @@ from continuous-time stochastic processes — specifically the relationship
 between the observed discrete time series and the underlying continuous
 dynamics — adapted here to the multi-regime setting.
 
-The regime-conditional characterization is the structural innovation of ARC.
+The regime-conditional characterization is the structural innovation of ARCM.
 The full mathematical treatment is reserved for the forthcoming technical note.
 
 ### Layer 3 — Regime-Aware Sequential Forecasting
@@ -107,7 +107,7 @@ updated daily as new curve data is ingested.
 
 ---
 
-## What ARC Produces
+## What ARCM Produces
 
 Three analytical outputs, each actionable:
 
@@ -145,9 +145,9 @@ The pipeline runs fully automated via `fredapi`. No manual downloads required.
 ## Repository Structure
 
 ```
-ARC/
+ARCM/
 ├── README.md
-├── arc/
+├── arcM/
 │   ├── pipeline.py          FRED ingestion and curve construction
 │   ├── nelson_siegel.py     NS factor extraction and daily update
 │   ├── regime.py            Latent regime detection
@@ -169,7 +169,7 @@ ARC/
 
 ## Dashboard
 
-The Power BI dashboard consuming ARC's pipeline outputs is maintained in
+The Power BI dashboard consuming ARCM's pipeline outputs is maintained in
 [stevetab03/powerbi-dax-patterns](https://github.com/stevetab03/powerbi-dax-patterns).
 Three pages — curve monitor, regime timeline, position forecast — built on the
 same DAX architecture documented in that repository.
@@ -181,7 +181,7 @@ same DAX architecture documented in that repository.
 [ORBIT](https://github.com/stevetab03/ORBIT) established a rigorous framework
 for basis convergence in commodity futures, demonstrating that variance collapse
 is provable from first principles when the convergence mechanism is contractually
-enforced. ARC operates in the same intellectual register but in a different
+enforced. ARCM operates in the same intellectual register but in a different
 market: the convergence being studied is not futures-to-spot but
 rate-forecasts-to-realized-rates across policy regime boundaries.
 
