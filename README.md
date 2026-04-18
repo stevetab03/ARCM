@@ -146,8 +146,7 @@ All inputs are publicly available. No proprietary data sources are required.
 ARCM/
 ├── README.md
 ├── arcm/
-│   ├── pipeline.py          FRED ingestion and curve construction
-│   ├── nelson_siegel.py     NS factor extraction and daily update
+│   ├── pipeline.py          FRED ingestion and curve construction via Nelson-Siegel
 │   ├── regime.py            Latent regime detection
 │   ├── dynamics.py          Regime-conditional factor characterization
 │   ├── forecast.py          Sequential distributional forecasting
