@@ -12,7 +12,7 @@
 
 ## Motivation
 
-In April 2026, I purchased a 1-year US Treasury bill (CUSIP 912797UE5) at 96.439575 —
+In April 2026, I entered a long position in 1-year US Treasury bill (CUSIP 912797UE5) at $96.439575 —
 an implied yield of approximately 3.69%. The purchase was straightforward. What was
 not straightforward was the analytical question it raised:
 
