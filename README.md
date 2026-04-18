@@ -205,5 +205,6 @@ structurally different across regimes, not the ones that are stable.*
 
 ## Contact
 
+**Monograph:** Available upon request for full derivations, proofs, and theorem statements.  
 **LinkedIn:** https://www.linkedin.com/in/hlzhang/  
 **GitHub:** https://github.com/stevetab03
