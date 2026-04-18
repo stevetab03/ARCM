@@ -138,8 +138,6 @@ All inputs are publicly available. No proprietary data sources are required.
 | [FRED](https://fred.stlouisfed.org) | Federal Funds Rate, policy announcements | Daily |
 | [TreasuryDirect](https://www.treasurydirect.gov) | T-bill auction prices and yields | Weekly |
 
-The pipeline runs fully automated via `fredapi`. No manual downloads required.
-
 ---
 
 ## Repository Structure
@@ -147,7 +145,7 @@ The pipeline runs fully automated via `fredapi`. No manual downloads required.
 ```
 ARCM/
 ├── README.md
-├── arcM/
+├── arcm/
 │   ├── pipeline.py          FRED ingestion and curve construction
 │   ├── nelson_siegel.py     NS factor extraction and daily update
 │   ├── regime.py            Latent regime detection
