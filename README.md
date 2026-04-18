@@ -148,7 +148,7 @@ ARCM/
 ├── arcm/
 │   ├── pipeline.py          FRED ingestion and curve construction via Nelson-Siegel
 │   ├── regime.py            Latent regime detection
-│   ├── dynamics.py          Regime-conditional factor characterization
+│   ├── dynamics.py          Regime-conditional OU calibration via MLE
 │   ├── forecast.py          Sequential distributional forecasting
 │   └── position.py          Position-level P&L and risk attribution
 ├── notebooks/
@@ -156,9 +156,19 @@ ARCM/
 │   ├── 02_regime_detection.ipynb
 │   └── 03_forecast_and_position.ipynb
 └── outputs/
+    ├── models/
+    │   ├── hmm_model.pkl
+    │   └── ou_params.pkl
     └── powerbi/
+        ├── curve_panel.csv
         ├── curve_factors.csv
+        ├── fed_funds.csv
+        ├── position_summary.csv
         ├── regime_timeline.csv
+        ├── regime_stats.csv
+        ├── regime_dynamics.csv
+        ├── ou_paths.csv
+        ├── position_analytics.csv
         └── forecast_distribution.csv
 ```
 
