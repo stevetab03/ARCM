@@ -1,0 +1,2 @@
+current_regime,beta1_current,beta2_current,beta3_current,current_yield_ns_pct,kappa,theta,eta,half_life_days,expected_beta2_at_maturity,expected_yield_pct,forecast_std_yield_pct,prob_rate_rise,prob_rate_fall,optimal_quantile_tau_q,horizon_years
+Tightening,4.272310611878138,10.773612952058864,-15.0,4.014924768395655,35.39243883561506,8.43069417251058,25.305917188055034,4.935322211402239,8.430694172510583,3.872241025267517,0.18317622311088305,0.9140496259623094,0.08595037403769062,0.32532624903405694,1.0
