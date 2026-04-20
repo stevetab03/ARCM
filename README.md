@@ -8,7 +8,7 @@
 **Author:** Liyuan Zhang  
 **Status:** Active Research & Development / Portfolio Showcase  
 
-To protect my IP, all Jupyter notebooks have been converted to HTML format using the nbconvert --no-input command. This process ensures that only the research outputs and visualizations are shared within the repository, while the underlying source code remains restricted. 
+_To protect my IP, all Jupyter notebooks have been converted to HTML format using the nbconvert --no-input command. This process ensures that only the research outputs and visualizations are shared within the repository, while the underlying source code remains restricted._ 
 
 ---
 
